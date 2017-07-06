@@ -33,3 +33,5 @@ Executable builder-client
         Build-Depends: unix >= 2.3 && < 2.8
         Cpp-Options: -DHAVE_SYSTEM_POSIX_RESOURCE
 
+    if os(solaris)
+        Extra-Libraries: ssp
